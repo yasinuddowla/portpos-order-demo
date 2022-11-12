@@ -1,0 +1,47 @@
+# customer
+
+name
+email
+phone
+
+# customer_address
+
+customer_id
+address_id
+is_active
+
+# address
+
+id
+street
+city
+state
+zipcode
+country
+
+# product
+
+product name
+product details
+
+# order
+
+customer_id
+product_id
+amount
+paryment_url
+status
+
+# order_status
+
+order_id
+status
+
+# API
+
+post - login
+post - logout
+post - order => create order with payment link
+get - order => order list
+patch - update order status checking wih portPos IPN (Pending > Paid > Fulfilled > Refund)
+post - Order Return + PortPos refund

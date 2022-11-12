@@ -1,0 +1,71 @@
+Project from Portonics Limited for Software Engineer (Fullstack)
+
+**_ Please read the below instructions carefully and submit the project in the given time. This
+assignment might take you 1.5 hours to complete._**
+Project Overview:
+
+Mr. Sakib has a Facebook page where he sells electronic gadgets online. He does not have his
+own website. He currently sells products through Cash on Delivery (COD) method. But he is facing
+some challenges in this COD system. He has decided to accept online payments through PortPos
+and for that he gets access to PortPos' sandbox. Moreover, he wants to build a small, very simple
+platform to track his orders.
+By building the system Mr. Sakib wants to achieve the followings:
+
+1. When Mr. Sakib receives an order on Facebook, he will go to his platform and create a new
+   order.
+2. Once the order is created, a PortPos invoice will be generated and the payment link can be
+   copied by Mr. Sakib.
+3. Mr. Sakib will be giving the payment link to his customers. If the customer makes the
+   payment, he will see it on his platform.
+
+Mr. Sakib should have an order update option so that he can switch order status from:
+Pending > Paid > Fulfilled > Refund
+Minimum required fields to create an order:
+
+● Customer Name
+● Customer Email
+● Customer Phone
+● Customer Address
+● Amount
+● Product Name
+● Product Details
+
+Remember Mr. Sakib has a bigger plan with his platform so he wants all the options to be available
+to him in API form so he can use them in the future.
+Features should include:
+
+● Login/logout (Mandatory)
+● Order List (Mandatory)
+● Creating order + PortPos Invoice (Mandatory)
+● Order Payment Status update through PortPos IPN(Mandatory)
+● Order Return + PortPos refund (Optional)
+Please be informed you should pass the PortPos UAT guidelines. Link below:
+
+https://drive.google.com/file/d/1n3DfejNShiiLKPNE1g5GrDuKbQ6wyXNl/view?usp=drivesdk
+Minimal documentation should be provided:
+
+● How the system should run (i.g What command to run).
+● How to build the system's tests (What command to run).
+● A short description of functionality.
+● Must include the SQL Schema.
+Stacks (Choose one or many):
+
+Languages: PHP, NodeJS, Javascript
+Frameworks: Symfony, Lumen, Slim, ExpressJS, ReactJS
+DB: MySQL, Postgres, SQLite
+PortPos API: https://developer.portwallet.com/documentation-v2.php
+AppKey: db09e1518d5f4ebddc74db6877791573
+SecretKey: 882320eeca83f9e79e61cb9b15b57b81
+
+Portonics Limited - Technology Consultants | portonics.com | portpos.com
+
+Some important notes:
+Don't include any additional code or files if you are not using it.
+Try to avoid framework it helps you to prove your skills better.
+Try to avoid using packages for tiny tasks.
+Please be sure you are following the coding guideline provided by the lang, framework, and
+libraries.
+Please make sure your code is well-documented and readable.
+If it includes test case and unit test it will be a plus.
+Make sure you are doing a good kind of functional and security test before you sent it.
+ALL THE BEST!!!
