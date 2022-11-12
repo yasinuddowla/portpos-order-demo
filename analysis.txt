@@ -45,3 +45,32 @@ post - order => create order with payment link
 get - order => order list
 patch - update order status checking wih portPos IPN (Pending > Paid > Fulfilled > Refund)
 post - Order Return + PortPos refund
+
+
+# Order
+{
+    "order":{
+        "amount": 100,
+        "currency": "BDT",
+        "redirect_url": "http://www.example.com",
+        "ipn_url": ""
+    },
+    "product": {
+        "name": "Samsung Mobile",
+        "description": "some details goes here"
+    },
+    "billing": {
+        "customer": {
+            "name": "Robbie Amell",
+            "email": "test@example.com",
+            "phone": "801234567893",
+            "address": {
+                "street": "House 1, Road1, Gulshan 1",
+                "city": "Dhaka",
+                "state": "Dhaka",
+                "zipcode": 1212,
+                "country": "Bangladesh"
+            }
+        }
+    }
+}
