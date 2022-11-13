@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 12, 2022 at 08:23 PM
+-- Generation Time: Nov 13, 2022 at 04:15 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.5
 
@@ -43,15 +43,9 @@ CREATE TABLE `address` (
 --
 
 INSERT INTO `address` (`id`, `street`, `city`, `state`, `zipcode`, `country`, `created_at`, `updated_at`) VALUES
-(1, 'House 1, Road1, Gulshan 1', '', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 00:48:10', '2022-11-13 00:48:10'),
-(2, 'House 1, Road1, Gulshan 1', '', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 00:48:53', '2022-11-13 00:48:53'),
-(3, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 00:49:13', '2022-11-13 00:49:13'),
-(4, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 00:49:32', '2022-11-13 00:49:32'),
-(5, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 00:51:16', '2022-11-13 00:51:16'),
-(6, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 01:08:30', '2022-11-13 01:08:30'),
-(7, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 01:08:42', '2022-11-13 01:08:42'),
-(8, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 01:08:48', '2022-11-13 01:08:48'),
-(9, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'Bangladesh', '2022-11-13 01:09:33', '2022-11-13 01:09:33');
+(1, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'bd', '2022-11-13 07:47:16', '2022-11-13 08:08:24'),
+(2, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'bd', '2022-11-13 07:47:47', '2022-11-13 08:08:29'),
+(3, 'House 1, Road1, Gulshan 1', 'Dhaka', 'Dhaka', '1212', 'bd', '2022-11-13 08:01:30', '2022-11-13 08:08:31');
 
 -- --------------------------------------------------------
 
@@ -73,24 +67,9 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`id`, `name`, `email`, `phone`, `created_at`, `updated_at`) VALUES
-(1, 'Test name', 'test@gmail.com', '0156789425', '2022-11-12 23:29:29', '2022-11-12 23:29:29'),
-(2, 'Test Name', 'test@gmail.com', '01569874685', '2022-11-13 00:13:59', '2022-11-13 00:13:59'),
-(3, 'Test Name', 'test@gmail.com', '01569874685', '2022-11-13 00:14:03', '2022-11-13 00:14:03'),
-(4, 'Test Name', 'test@gmail.com', '01569874685', '2022-11-13 00:16:35', '2022-11-13 00:16:35'),
-(5, 'Test Name', 'test@gmail.com', '01569874685', '2022-11-13 00:22:08', '2022-11-13 00:22:08'),
-(6, 'Test Name', 'test@gmail.com', '01569874685', '2022-11-13 00:24:16', '2022-11-13 00:24:16'),
-(7, 'Test Name', 'test@gmail.com', '01569874685', '2022-11-13 00:25:15', '2022-11-13 00:25:15'),
-(8, 'Test Name', 'test@gmail.com', '01569874685', '2022-11-13 00:29:34', '2022-11-13 00:29:34'),
-(9, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 00:35:53', '2022-11-13 00:35:53'),
-(10, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 00:48:10', '2022-11-13 00:48:10'),
-(11, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 00:48:53', '2022-11-13 00:48:53'),
-(12, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 00:49:13', '2022-11-13 00:49:13'),
-(13, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 00:49:32', '2022-11-13 00:49:32'),
-(14, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 00:51:16', '2022-11-13 00:51:16'),
-(15, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 01:08:30', '2022-11-13 01:08:30'),
-(16, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 01:08:42', '2022-11-13 01:08:42'),
-(17, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 01:08:48', '2022-11-13 01:08:48'),
-(18, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 01:09:33', '2022-11-13 01:09:33');
+(1, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 07:47:16', '2022-11-13 07:47:16'),
+(2, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 07:47:47', '2022-11-13 07:47:47'),
+(3, 'Robbie Amell', 'test@example.com', '801234567893', '2022-11-13 08:01:30', '2022-11-13 08:01:30');
 
 -- --------------------------------------------------------
 
@@ -112,7 +91,9 @@ CREATE TABLE `customer_address` (
 --
 
 INSERT INTO `customer_address` (`id`, `customer_id`, `address_id`, `is_active`, `created_at`, `updated_at`) VALUES
-(1, 18, 9, 1, '2022-11-13 01:09:33', '2022-11-13 01:09:33');
+(1, 1, 1, 1, '2022-11-13 07:47:16', '2022-11-13 07:47:16'),
+(2, 2, 2, 1, '2022-11-13 07:47:47', '2022-11-13 07:47:47'),
+(3, 3, 3, 1, '2022-11-13 08:01:30', '2022-11-13 08:01:30');
 
 -- --------------------------------------------------------
 
@@ -125,11 +106,19 @@ CREATE TABLE `order` (
   `customer_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
   `amount` int(11) NOT NULL,
-  `paryment_url` char(255) NOT NULL,
+  `invoice_id` char(50) NOT NULL,
+  `payment_url` char(255) NOT NULL,
   `status` char(20) NOT NULL,
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `updated_at` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `order`
+--
+
+INSERT INTO `order` (`id`, `customer_id`, `product_id`, `amount`, `invoice_id`, `payment_url`, `status`, `created_at`, `updated_at`) VALUES
+(1, 2, 1, 100, '8637055E43052A57', 'https://payment-sandbox.portwallet.com/payment/?invoice=8637055E43052A57', 'pending', '2022-11-13 08:26:43', '2022-11-13 08:26:43');
 
 -- --------------------------------------------------------
 
@@ -144,6 +133,14 @@ CREATE TABLE `order_status` (
   `created_at` datetime NOT NULL DEFAULT current_timestamp(),
   `updated_at` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `order_status`
+--
+
+INSERT INTO `order_status` (`id`, `order_id`, `status`, `created_at`, `updated_at`) VALUES
+(1, 1, 'pending', '2022-11-13 08:54:19', '2022-11-13 08:54:19'),
+(2, 1, 'pending', '2022-11-13 08:54:34', '2022-11-13 08:54:34');
 
 -- --------------------------------------------------------
 
@@ -164,11 +161,7 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `details`, `created_at`, `updated_at`) VALUES
-(1, 'Samsung Mobile', 'some details goes here', '2022-11-13 00:25:15', '2022-11-13 00:25:15'),
-(2, 'Samsung Mobile', 'some details goes here', '2022-11-13 00:29:34', '2022-11-13 00:29:34'),
-(3, 'Samsung Mobile', 'some details goes here', '2022-11-13 00:35:53', '2022-11-13 00:35:53'),
-(4, 'Samsung Mobile', 'some details goes here', '2022-11-13 00:51:16', '2022-11-13 00:51:16'),
-(5, 'Samsung Mobile', 'some details goes here', '2022-11-13 01:12:30', '2022-11-13 01:12:30');
+(1, 'Samsung Mobile', 'some details goes here', '2022-11-13 07:48:09', '2022-11-13 07:48:09');
 
 --
 -- Indexes for dumped tables
@@ -223,37 +216,37 @@ ALTER TABLE `product`
 -- AUTO_INCREMENT for table `address`
 --
 ALTER TABLE `address`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `customer_address`
 --
 ALTER TABLE `customer_address`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `order`
 --
 ALTER TABLE `order`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `order_status`
 --
 ALTER TABLE `order_status`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
