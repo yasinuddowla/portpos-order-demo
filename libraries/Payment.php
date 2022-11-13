@@ -4,6 +4,7 @@ define('SECRETKEY', '882320eeca83f9e79e61cb9b15b57b81');
 class Payment
 {
     public $createInvoiceUrl = 'https://api-sandbox.portwallet.com/payment/v2/invoice';
+    public $ipnValidateUrl = 'https://api-sandbox.portwallet.com/payment/v2/invoice/ipn/';
     public $method = 'POST';
     public function __construct()
     {
@@ -20,6 +21,20 @@ class Payment
             'status' => $invoiceInfo->result,
             'invoice_id' => $invoiceInfo->data->invoice_id,
             'payment_url' => $invoiceInfo->data->action->url
+        ];
+    }
+    public function ipnValidate($invoiceId, $amount)
+    {
+        $token = "Bearer " . $this->getEncodedToken();
+        $headers = array(
+            'Content-Type: application/json',
+            'Authorization: ' . $token,
+        );
+        $this->ipnValidateUrl .= "{$invoiceId}/{$amount}/";
+        $invoiceInfo = $this->makeRequest($this->ipnValidateUrl, [], $headers);
+        return [
+            'status' => strtolower($invoiceInfo->data->order->status),
+            'invoice_id' => $invoiceInfo->data->invoice_id
         ];
     }
     public function getEncodedToken()

@@ -1,8 +1,8 @@
 <?php
 // request methods
-define('GET', 'get');
-define('POST', 'post');
-define('PATCH', 'patch');
+define('GET', 'GET');
+define('POST', 'POST');
+define('PATCH', 'PATCH');
 
 // order status
 define('ORDER_PENDING', 'pending');

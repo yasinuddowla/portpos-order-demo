@@ -37,4 +37,18 @@ class OrderModel extends BaseModel
         $this->status = $order['status'];
         return $this->insert();
     }
+    public function updateStatusById($orderId, $status)
+    {
+        $sql = "UPDATE {$this->tableName} SET status='{$status}' WHERE id= {$orderId}";
+        $result = mysqli_query($this->dbCon, $sql);
+        $this->addOrderStatus($orderId, $status);
+        return $this->getById($orderId);
+    }
+    public function addOrderStatus($orderId, $status)
+    {
+        $sql = "INSERT INTO `order_status` (order_id, status) VALUES ({$orderId}, '{$status}')";
+        $result = mysqli_query($this->dbCon, $sql);
+        $insertId = mysqli_insert_id($this->dbCon);
+        return true;
+    }
 }

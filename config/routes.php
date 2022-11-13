@@ -3,8 +3,7 @@
 include_once('config/autoload.php');
 
 $request = $_SERVER['REQUEST_URI'];
-
-$method = strtolower($_SERVER['REQUEST_METHOD']);
+$method = strtoupper($_SERVER['REQUEST_METHOD']);
 
 if ($request === '/' && $method === GET) {
     $home = new Home;
@@ -27,6 +26,9 @@ if ($request === '/' && $method === GET) {
 } elseif ($request === '/orders' && $method === POST) {
     $order = new Order;
     $order->add();
+} elseif ($request === '/orders' && $method === PATCH) {
+    $order = new Order;
+    $order->updateStatus();
 } else {
     $error = new CustomError();
     $error->show_404();

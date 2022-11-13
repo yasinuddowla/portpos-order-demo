@@ -50,4 +50,21 @@ class Order
 
         returnResponse($inserttedOrder);
     }
+    public function updateStatus()
+    {
+        $userId = $this->auth->validateToken();
+        $postData = getRawInput();
+        $orderId = $postData['order_id'];
+        $status = $postData['status'];
+
+        $order = $this->orderModel->getById($orderId);
+        $invoiceId = $order['invoice_id'];
+        $amount = $order['amount'];
+        $ipnInfo = $this->payment->ipnValidate($invoiceId, $amount);
+        if ($status == $ipnInfo['status']) {
+            throwError(ITEM_UPDATE_FAILURE, 'Payment status is ' . $ipnInfo['status']);
+        }
+        $update = $this->orderModel->updateStatusById($orderId, $status);
+        returnResponse($update);
+    }
 }
