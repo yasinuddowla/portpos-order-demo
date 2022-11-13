@@ -10,14 +10,14 @@ This is to demostrate basic functionality of an order tracking platform that use
 
 ## Installation
 
-**Step-1:** Create a database and update credentials accordingly at `database/connect.php`
-**Step-2:** Import sql from `database/schema.sql`
-**Step-3:** Enter the comand `php -S localhost:8000` at the root directory
+**Step-1:** Create a database and update credentials accordingly at `database/connect.php` </br>
+**Step-2:** Import sql from `database/schema.sql` </br>
+**Step-3:** Enter the comand `php -S localhost:8000` at the root directory </br>
 
 ## API Documentation
 
-Please visit this [API documenation](https://documenter.getpostman.com/view/10377348/2s8YesrX4j) to know more about it.
-You can import on [Postman](<[Postman](https://www.postman.com/)>) as a collection.
+Please visit this [API documenation](https://documenter.getpostman.com/view/10377348/2s8YesrX4j) to know more about it. </br>
+You can import on [Postman](<[Postman](https://www.postman.com/)>) as a collection. </br>
 
 ## Credit:
 
