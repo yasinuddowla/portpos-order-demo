@@ -62,3 +62,12 @@ function getDataFromMysqlObject($result, $asObject = false)
     }
     return $asObject ? json_decode(json_encode($data)) : $data;
 }
+
+function removeFields($arr)
+{
+    $indices = ['id', 'created_at', 'updated_at'];
+    foreach ($indices as $i) {
+        unset($arr[$i]);
+    }
+    return $arr;
+}

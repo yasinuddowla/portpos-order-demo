@@ -41,4 +41,20 @@ class CustomerModel extends BaseModel
 
         return $this->getById($insertId);
     }
+    public function getAddress($customerId)
+    {
+        $sql = "SELECT a.* FROM customer_address ca 
+        JOIN address a ON ca.address_id=a.id WHERE ca.customer_id={$customerId} AND ca.is_active = 1";
+        $result = mysqli_query($this->dbCon, $sql);
+        $data = getDataFromMysqlObject($result);
+        return count($data) ? $data[0] : null;
+    }
+    public function getWithAddress($customerId)
+    {
+        $this->tableName = 'customer';
+        $customer = $this->getById($customerId);
+        $address = removeFields($this->getAddress($customerId));
+        $customer['address'] = $address;
+        return $customer;
+    }
 }

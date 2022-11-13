@@ -26,4 +26,13 @@ class ProductModel extends BaseModel
         $this->details = $product->details ?? throwError(ITEM_INSERT_FAILURE, 'Product details required.');
         return $this->insert();
     }
+    public function getBasicInfo($id)
+    {
+        $data = $this->getById($id);
+        if (!$data) return null;
+        return [
+            'name' => $data['name'],
+            'description' => $data['details']
+        ];
+    }
 }

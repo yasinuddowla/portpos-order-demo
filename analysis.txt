@@ -52,8 +52,8 @@ post - Order Return + PortPos refund
     "order":{
         "amount": 100,
         "currency": "BDT",
-        "redirect_url": "http://www.example.com",
-        "ipn_url": ""
+        "redirect_url": "http://localhost:8000/payment/complete/",
+        "ipn_url": "http://localhost:8000/payment/status/update/"
     },
     "product": {
         "name": "Samsung Mobile",
