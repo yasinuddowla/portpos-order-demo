@@ -33,6 +33,7 @@ class Auth
                 'user_id' => $this->userId,
                 'token' => $token,
             ];
+            setSession('loggedIn', true);
             returnResponse($data);
         } catch (Exception $e) {
             throwError(JWT_PROCESSING_ERROR, $e->getMessage());
@@ -49,6 +50,7 @@ class Auth
 
     public function validateToken()
     {
+        if (!getSession('loggedIn')) throwError(UNAUTHORIZED);
         try {
             $token = $this->getBearerToken();
             $payload = JWT::decode($token, JWT_SECRETE_KEY, ['HS256']);

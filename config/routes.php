@@ -11,6 +11,9 @@ if ($request === '/' && $method === GET) {
 } elseif ($request === '/login' && $method === POST) {
     $user = new User;
     $user->login();
+} elseif ($request === '/logout' && $method === POST) {
+    $user = new User;
+    $user->logout();
 } elseif ($request === '/customers' && $method === GET) {
     $customer = new Customer;
     $customer->get();

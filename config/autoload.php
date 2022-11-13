@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once('database/connect.php');
 include_once('models/BaseModel.php');
 include_once('models/Auth.php');

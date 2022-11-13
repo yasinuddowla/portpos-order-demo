@@ -11,4 +11,8 @@ class User
         $auth = new Auth();
         $auth->getToken($username, $password);
     }
+    public function logout()
+    {
+        resetSession();
+    }
 }

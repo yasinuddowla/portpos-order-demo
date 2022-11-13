@@ -71,3 +71,22 @@ function removeFields($arr)
     }
     return $arr;
 }
+
+function setSession($var, $value = '')
+{
+    $_SESSION[$var] = $value;
+    return;
+}
+function getSession($var)
+{
+    return $_SESSION[$var] ?? null;
+}
+function unsetSession($var)
+{
+    unset($_SESSION[$var]);
+    return;
+}
+function resetSession()
+{
+    session_destroy();
+}
